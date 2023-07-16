@@ -10,11 +10,6 @@ export interface CustomButtonProps {
   rightIcon?: string;
 }
 
-export interface SearchManufacturerProps {
-  manufacturer: string;
-  setManufacturer: (manufacturer: string) => void;
-}
-
 export interface CarProps {
   city_mpg: number;
   class: string;
