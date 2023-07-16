@@ -49,3 +49,8 @@ export interface ShowMoreProps {
   isNext: boolean;
   setLimit: React.Dispatch<React.SetStateAction<number>>;
 }
+
+export interface SearchManuFacturerProps {
+  manufacturer: string;
+  setManuFacturer: (manufacturer: string) => void;
+}
