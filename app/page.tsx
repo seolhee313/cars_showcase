@@ -6,9 +6,10 @@ import { CarCard, CustomFilter, Hero, SearchBar, ShowMore } from "@/components";
 import { fetchCars } from "@/utils";
 import { fuels, yearsOfProduction } from "@/constants";
 import Image from "next/image";
+import { CarProps } from "@/types";
 
 export default function Home() {
-  const [allCars, setAllCars] = useState([]);
+  const [allCars, setAllCars] = useState<CarProps[]>([]);
   const [loading, setLoading] = useState(false);
 
   // search states
@@ -101,7 +102,7 @@ export default function Home() {
         ) : (
           <div className="home__error-container">
             <h2 className="text-black text-xl font-bold">Oops, no results</h2>
-            <p>{allCars?.message}</p>
+            {allCars.length === 0 && <p>No cars found.</p>}
           </div>
         )}
       </div>
