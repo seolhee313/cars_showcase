@@ -5,5 +5,5 @@ RapidAPI의 "Cars by API-Ninjas" API에서 제공하는 자동차 카탈로그�
 
 ![image](https://github.com/seolhee313/cars_showcase/assets/125417882/bc28e469-7663-4ce2-add4-6ea594c97ed6)
 
-Live Demo
+Live Demo :
 작업 기간 : 3일
